@@ -1,0 +1,348 @@
+<!-- main html file for the landing page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFA</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/ASSETS/Icons/favicon.png" type="image/x-icon">
+    <!-- links for styling amd scripting documents -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Dashboard.css">
+    <script defer src="../src/Dashboard.js"></script>
+
+
+</head>
+<body>
+    <!-- the confirmation message -->
+    <div class="mini_message">
+        <label for="article-confirmation" id="mini-msg-txt" class="container">
+
+
+            <p>
+                <li>Read our most recent research article on Accessibility Compliance <b>:56% of Federal Govt Ministries Evaluated are fully accessible</b></li></p>
+        </label>
+    </div>
+
+
+
+<!-- header  -->
+<div class="sticky_header">
+<header class="container">
+<!--this is the element holding the header tag together-->
+    <div class="logo">
+        <a href="#" title="Accessibility Compliance Dashboard">
+            <!-- link holding the entire logo on the right -->
+            <img src="./Images/logo01.png" alt="logo" width="90">
+            <img src="../ASSETS/Icons/Union.svg" alt="logo" class="union">
+
+
+        <div class="ac-dashboard">
+            <div class="access-logo-txt">A</div>
+            <div class="comply-logo-txt">C</div>
+            <div class="dashboard-logo-txt">D</div>
+        </div>
+
+        <!-- full name abbreviations in the logo -->
+        <div class="acd-full">
+            <p>Accessibility</p>
+            <p>Complaince</p>
+            <p>Dashboard</p>
+        </div>
+        </a>
+        <!--end of link holding the entire logo on the right -->
+
+    </div>
+
+
+<!-- navigation  -->
+<div class="navigation">
+    <nav>
+        <ul>
+            <li><a href="#">Our Research</a></li>
+            <li><a href="#" class="compliance">
+                Compliance Dashboard
+            <img src="../ASSETS/Icons/vctrswoosh.svg" alt="dashboard"></a></li>
+            <li><a href="#" class="evaluation">Apply for Evaluation<sup>New</sup></a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<!-- diability btn -->
+<div class="disability-btn">
+    <a href="#" target="_blank">
+    <img src="../ASSETS/Icons/Book.svg" alt="disability book">
+    <p>Disability Act, 2018</p>
+    </a>
+</div>
+
+    <!-- tag used to hold the handburger menu -->
+    <menu>
+        <div></div>
+        <div></div>
+        <div></div>
+    </menu>
+    <!-- end of header -->
+</div>
+</header>
+
+
+<!-- hero -->
+<section class="hero">
+    <div class="hero_content container">
+        <!-- texts on the left hand side -->
+        <div class="hero-lft-txt">
+        <p>Welcome to the Inclusive Friends </p>
+
+        <h1>The <span>Accessibility Compliance and Evaluation</span> Dashboard </h1>
+
+        <div class="hero_innercontent">
+            <p>Get access to a comprehensive directory of our accessibility compliance evaluation across public, private and civil organisations in Nigeria</p>
+
+            <a href="#" title="Verify Acessibility">Verify Accessibility</a>
+            <div class="verify_accesibility">
+                <p>Verify Accessibility</p>
+                <form action="#" method="post">
+                    <input type="text" list="organiztion" id="organization_type" placeholder="Type of Organization" required>
+                    <!-- type of organizations in co-operation with acd -->
+                    <datalist id="organiztion">
+                        <option value="Government Agency"></option>
+                        <option value="Public Service"></option>
+                        <option value="Non-Governmental Organisation"></option>
+                        <option value="Religious Organisation"></option>
+                        <option value="Residential "></option>
+                        <option value="Hotes & Hospitality "></option>
+                        <option value="Clubs & Recreation"></option>
+                        <option value="Academia"></option>
+        
+                    </datalist>
+        
+                    <input type="text" list="state" id="organization_location" placeholder="Location" required >
+                    <!-- the 36 states found in Nigeria are located in this list -->
+                    <datalist id="state">
+                        <option value="Abia">Land of God</option>
+                        <option value="Adamawa">Land of Beauty</option>
+                        <option value="AkwaIbom">Land of Promise</option>
+                        <option value="Anambra">Light of the Nation</option>
+                        <option value="Bauchi">Pearl of Tourism</option>
+                        <option value="Bayelsa">Glory of All Lands</option>
+                        <option value="Benue">Food Basket of the Nation</option>
+                        <option value="Borno">Home of Peace</option>
+                        <option value="CrossRiver">The People's Paradise</option>
+                        <option value="Delta">The Big Heart</option>
+                        <option value="Ebonyi">Salt of the Nation</option>
+                        <option value="Edo">Heartbeat of the Nation</option>
+                        <option value="Ekiti">Land of Honour</option>
+                        <option value="Enugu">Coal City State</option>
+                        <option value="Gombe">Jewel in the Savannah</option>
+                        <option value="Imo">Eastern Heartland</option>
+                        <option value="Jigawa">The New World</option>
+                        <option value="Kaduna">Centre of Learning</option>
+                        <option value="Kano">Centre of Commerce</option>
+                        <option value="Katsina">Home of Hospitality</option>
+                        <option value="Kebbi">Land of Equity</option>
+                        <option value="Kogi">Confluence State</option>
+                        <option value="Kwara">State of Harmony</option>
+                        <option value="Lagos">Centre of Excellence</option>
+                        <option value="Nasarawa">Home of Solid Minerals</option>
+                        <option value="Niger">The Power State</option>
+                        <option value="Ogun">Gateway State</option>
+                        <option value="Ondo">Sunshine State</option>
+                        <option value="Osun">Land of Virtue</option>
+                        <option value="Oyo">Pace Setter</option>
+                        <option value="Plateau">Home of Peace and Tourism</option>
+                        <option value="Rivers">Treasure Base of the Nation</option>
+                        <option value="Sokoto">Seat of the Caliphate</option>
+                        <option value="Taraba">Nature's Gift to the Nation</option>
+                        <option value="Yobe">Pride of the Sahel</option>
+                        <option value="Zamfara">Farming is Our Pride</option>
+                    </select>
+                    </datalist>
+        
+                    <input type="text" list="company_name" id="organization_name" placeholder="Name of Organisation" required>
+                    <!--names of the company -->
+                    <datalist id="company_name">
+                        <option value="Federal Ministry of Works"></option>
+                        <option value="Federal Ministry of Health"></option>
+                        <option value="Federal Ministry of Women Affairs"></option>
+                        <option value="The Presidential Villa - Aso Rock"></option>
+                        <option value="Federal Ministry of Power and Technology"></option>
+                        <option value="Federal Ministry of Sports"></option>
+        
+                    </datalist>
+        
+                    <input type="submit" id="submit_btn" value="Verify">
+                </form>
+            </div>
+        </div>
+        </div>
+
+        <!-- texts on the right hand side -->
+        <div class="hero-right-txt">
+        <!-- inner wave circles -->
+        <div class="innerwaves">
+            <!-- the circles inside the inner circle -->
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="inner_circle_play">
+                    <div>
+                        <a href="#" title="acd dashboard intro video"><img src="./Images/playimg.png" alt="video play img"></a>
+                    </div>
+                </div>
+
+     
+            <img src="./Images/man1.png" alt="man1" class="man1">
+            <img src="./Images/woman1.png" alt="woman1" class="woman1">
+            <img src="./Images/woman2.png" alt="woman2" class="woman2">
+            <img src="./Images/man2.png" alt="man2" class="man2">
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- sponsors -->
+<section class="sponsors container">
+  <div class="sponsors_left_content">
+    <div class="federal_images">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+        
+    <div class="verified_users">
+        <p><span>500+</span>Organisations have been verified</p>
+    </div>
+  </div>
+
+
+    <div class="sponsor_scroller">
+        <div class="sponsor_images">
+            <img src="./Images/Slider images/logoipsum-250.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-264.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-222.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-237.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-244.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-259.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-262.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-265.svg" alt="">
+
+
+            <img src="./Images/Slider images/logoipsum-250.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-264.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-222.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-237.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-244.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-259.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-262.svg" alt="">
+            <img src="./Images/Slider images/logoipsum-265.svg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- reviews -->
+<section class="reviews container">
+<div class="expert_reviews">
+    <div class="expert_comments">
+        <p>Expert Comments on Disability Act, 2019</p>
+
+        <div class="expert_cmmnts_image">
+            <img src="./Images/commentors.svg" alt="">
+        </div>
+    </div>
+    </div>
+
+
+<div class="professional_reivews ">
+    <div class="uppercard">
+        <img src="../ASSETS/Icons/quotes.svg" alt="">
+        <div class="arrow_navigation">
+            <div><img src="../ASSETS/Icons/left arrow.svg" alt=""></div>
+            <div><img src="../ASSETS/Icons/right arrow.svg" alt=""></div>
+        </div>
+        </div>
+        <div class="uppercard_text">
+            <p>This is a good development in the direction of the vulnerable segment of the society. I have been with spinal cord injury for almost 45 years now. We thanked GOD that we are having laws that protect us now. I studied and worked under constant oppression from colleagues.</p>
+        </div>
+
+        <div class="lowercard">
+            <div class="lowercard_img_holder">
+                <img src="../public/Images/Commenters/commenter1.svg" alt="">
+            </div>
+
+            <div class="name_info">
+                <h3>Dr. Dahiru Faralu Ibrahim</h3>
+                <p>Disability Professional, Lagos, NG</p>
+            </div>
+        </div>
+</div>
+
+</div>
+</section>
+
+
+<!-- evaluation -->
+<section class="evaluation_space container">
+    <div class="evaluations">
+    <h2>Apply for Evaluation</h2>
+
+    <div class="evaluation_form">
+        <h3>Organisation information</h3>
+
+        <p>Fill in the data to help us identify your organisation and create a schedule for your Accessibility evaluation. It will take a couple of minutes to fill the form.</p>
+
+        <form action="#" method="post">
+            <h4>Contacts</h4>
+            <p>These contacts are used to reach you or your representative.</p>
+
+            <div class="form_input">
+                <img src="../ASSETS/Icons/mail.svg" width="20" alt="">
+                <img src="../ASSETS/Icons/phone.svg" width="20" alt="">
+                <img src="../ASSETS/Icons/location.svg" width="20" alt="">
+            <input type="email" placeholder="yourcompanyemail@email.com" required>
+            <input type="text" placeholder="+234 0000 0000 000" required>
+            <input type="text" placeholder="15, Abubakar Str, Maitama, FCT" required>
+            </div>
+
+
+            <input type="submit" value="Submit Application →" id="submit_form">
+        </form>
+    </div>
+
+</div>
+</section>
+
+
+
+<!-- accesibility access -->
+<section class="accesibility container">
+    <div class="accesibility_intro">
+        <h4>OUR TEAM</h4>
+        <h1>Meet our Accessibility Experts</h1>
+
+        <p>Our team comprise certified experts in accessibility evaluation, we are committed to increasing awareness and promoting adherence to the Disability Act, 2019</p>
+    </div>
+
+    <div class="accesibility_experts">
+        <div class="experts_reviews">
+            <div class="expert-review_images">
+                <img src="../public/Images/experts images/expert image 1.png" alt="expert 01">
+            </div>
+
+            <h4>Jocelyn Schleifer</h4>
+
+            <p>Software Engineer</p>
+            <p>There are many variations of passages of Lorem Ipsum available</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* stylesheet for sponsors */
+.federal_images{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    justify-content: center;    
+}
+
+/* container holding the 3 coat of arms */
+.federal_images div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid var(--clr-slate-500);
+    background: #d3d3d3;
+}
+
+
+/* the first container inside the federal_images */
+.federal_images div:first-child{
+    position: relative;
+    left: 20px;
+}
+
+/* the second container inside the federal_images */
+.federal_images div:nth-child(2){
+    z-index: 2;
+}
+
+/* the last container inside the federal_images */
+.federal_images div:last-child{
+    position: relative;
+    z-index: 4;
+    right: 17px;
+}
+
+/* style used for the 500+ text */
+.verified_users span{
+    color: var(--clr-slate-300);
+}
+
+.verified_users p span{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* p tags  */
+.verified_users p{
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* sponsors */
+.sponsors{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+
+/* logo slider */
+.sponsor_scroller{
+    max-width: 400px;
+}
+
+/* container holding all the images */
+.sponsor_images{
+    padding-block: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.sponsor_scroller[data-animated="true"] {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.sponsor_scroller[data-animated="true"] .sponsor_images{
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scrolling 60s linear infinite;
+}
+
+
+
+/* animation for scroll */
+@keyframes scrolling {
+    to{
+        transform: translate(calc(-50% - 2rem));
+    }
+}
+
+
+
+
+
+@media (min-width:640px) {
+    .sponsor_scroller{
+        max-width: 530px;
+    }
+}
+
+@media (min-width:768px) {
+    .sponsor_scroller{
+        max-width: 600px;
+    }
+}
+
+@media (min-width:1024px) {
+    .sponsor_scroller{
+        max-width: 900px;
+    }
+}
+
+
+@media (min-width:1200px) {
+    /* sponsors */
+.sponsors{
+    flex-direction: row;
+    padding-block: 100px;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.sponsors_left_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.federal_images{
+    margin-top: 0;
+}
+
+.sponsor_scroller{
+    max-width: 650px;
+}
+
+.verified_users p{
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+}

@@ -1,0 +1,52 @@
+.mini_message{
+    padding-block: 0.2rem;
+    font-size: 8.5px;
+    /* display: none; */
+    background: var(--mini-msg-bg);
+}
+
+
+#mini-msg-txt{
+    display: flex;
+    margin: 0;
+    color: var(--clr-slate-500);
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+    list-style-type: square;
+}
+
+#mini-msg-txt p{
+    animation: move 10s linear infinite;
+}
+
+
+#article-confirmation{
+    background: var(--mini-msg-bg);
+}
+
+
+
+/* @keyframes move {
+    from{
+        transform: translateX(150%);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+} */
+
+#mini-msg-txt input{
+    z-index: 10;
+    padding: 2px;
+    background: var(--mini-msg-bg);
+    margin-left: 4px;
+}
+
+
+@media (min-width:768px) {
+    .mini_message{
+        display: block;
+    }
+}

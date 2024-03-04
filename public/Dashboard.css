@@ -1,0 +1,136 @@
+/* All the styles required for the website */
+@import url(../src/MediaQueries/Minimessage.css);/*style for the floating message*/
+@import url(../src/MediaQueries/Header.css);/*styles for the header*/
+@import url(../src/MediaQueries/Hero.css);/*styles for the hero*/
+@import url(../src/MediaQueries/Sponsors.css);/*styles for sponsors*/
+@import url(../src/MediaQueries/expert-reviews.css);/*styles for expert reviews 2019 Arc*/
+@import url(../src/MediaQueries/Evaluations.css);/*evaluation styling*/
+@import url(../src/MediaQueries/acessibility.css);/*accesibility styling*/
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Manrope', 'sans-serrif';
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+:root{
+    --mini-msg-bg: #FA17D6;
+    --clr-slate-100: #413E3E;
+    --clr-slate-200: #FEBD59;
+    --clr-slate-300: #107BEF;
+    --clr-slate-400: #4A4A4A;
+    --clr-slate-500: #F1F1F1;
+    --clr-slate-600: #000000;
+    --clr-slate-700: #565973;
+    --clr-slate-900: #6366F1;
+    --clr-slate-1000: #003D80;
+    --clr-slate-1100: #131022;
+    --clr-slate-dflt: #ffffff;
+}
+
+::selection{
+    color: var(--clr-slate-400);
+    background-color: var(--clr-slate-dflt);
+}
+
+
+/* helper classes */
+.container{
+    margin: 0 auto;
+    box-sizing: content-box;
+    width: auto;
+    padding-inline: 20px;
+}
+
+
+
+
+@media (min-width:320px) {
+    .container{
+        max-width: 320px;
+    }
+}
+
+
+
+/* 400px */
+@media (min-width:400px) {
+    .container{
+        max-width: 400px;
+    }
+}
+
+
+/* 480px */
+@media (min-width:480px) {
+    .container{
+        max-width: 480px;
+    }
+}
+
+
+/* 640px */
+@media (min-width:640px) {
+    .container{
+        max-width: 640px;
+    }
+}
+
+/* 768px */
+@media (min-width:768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+/* 890px */
+@media (min-width:890px) {
+    .container{
+        max-width: 890px;
+    }
+}
+
+/* 1000px */
+@media (min-width:1000px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+
+/* 1024px */
+@media (min-width:1024px) {
+    .container{
+        max-width: 1024px;
+    }
+}
+
+/* 1200px */
+@media (min-width:1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* 1280px */
+@media (min-width:1280px) {
+    .container{
+        max-width: 1280px;
+    }
+}
+
+/* 1550px */
+@media (min-width:1550px) {
+    .container{
+        max-width: 1550px;
+    }
+}

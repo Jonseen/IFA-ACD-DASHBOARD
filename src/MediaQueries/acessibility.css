@@ -1,0 +1,43 @@
+.accesibility{
+    padding-top: 60px;
+}
+
+.accesibility_intro{
+    text-align: center;
+}
+
+.accesibility_intro h4{
+    font-size: 12px;
+}
+
+.accesibility_intro h1{
+    font-size: 22px;
+}
+
+.accesibility_intro p{
+    font-size: 13px;
+    color: var(--clr-slate-700);
+}
+
+
+.experts_reviews h4{
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
+.experts_reviews p{
+    color: var(--clr-slate-700);    
+    font-size: 14px;
+    padding-bottom:10px;
+}
+
+.experts_reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.expert-review_images img{
+    width: 100%;
+}

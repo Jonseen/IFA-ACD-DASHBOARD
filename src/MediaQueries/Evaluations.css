@@ -1,0 +1,96 @@
+/* styles for evaluation */
+.evaluations{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    background: var(--clr-slate-300);
+}
+
+.evaluations h2{
+    color: var(--clr-slate-500);
+    font-size: 20px;
+    font-weight: 550;
+    padding-left: 10px;
+    padding-block: 30px;
+}
+
+
+.evaluation_form{
+    margin-inline: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--clr-slate-dflt);
+}
+
+.evaluation_form h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.evaluation_form p{
+    padding-block: 20px;
+    font-size: 12px;
+    color: var(--clr-slate-700);
+}
+
+.form_input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.form_input img{
+    position: absolute;
+}
+
+.form_input img:first-child{
+    top: 12px;
+}
+
+.form_input img:nth-child(2){
+    top: 60px;
+}
+
+.form_input img:nth-child(3){
+    top: 105px;
+}
+
+
+.form_input form{
+    padding: 10px;
+    border: 1px solid var(--clr-slate-700);
+}
+
+.form_input input{
+    width: 100%;
+    padding-block: 10px;
+    padding-left: 30px;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: var(--mini-ms-bg);
+}
+
+#submit_form{
+    margin-top: 10px;
+    border: none;
+    background-color: var(--clr-slate-300);
+    color: var(--clr-slate-dflt);
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+
+
+.evaluation_form form input::placeholder{
+    font-size: 10px;
+}
+
+.evaluation_form form h4{
+    font-size: 16px;
+}

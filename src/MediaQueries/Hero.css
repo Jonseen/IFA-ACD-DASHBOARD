@@ -1,0 +1,322 @@
+/* styles used for the hero */
+.hero{
+    width: 100%;
+    background: var(--clr-slate-500);
+}
+
+/* container holding the entire right hero */
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-block: 20px;
+}
+
+/* p tags in right hero */
+.hero-lft-txt p{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 14.8px;
+    font-weight: 490;
+}
+
+.hero-lft-txt h1{
+    width: 240px;
+    font-weight: 850;
+    font-size: 27px;
+}
+
+/* style used for the blue text */
+.hero-lft-txt h1 span{
+    color: var(--clr-slate-300);
+}
+
+.hero_innercontent p{
+    font-size: 14px;
+    padding-right: 8px;
+    line-height: 20px;
+    color: var(--clr-slate-700);
+    padding-bottom: 35px;
+    font-weight: 300;
+}
+
+
+.hero_innercontent a{
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--clr-slate-500);
+    border-radius: 7.5px;
+    background: var(--clr-slate-300);
+}
+
+
+
+/* .hero-right-txt content */
+.hero-right-txt{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+
+
+/* images of the people in the right section */
+.man1{
+    width: 130px;
+    top: -65px;
+    left: -10px;
+    position: absolute;
+}
+
+.woman1{
+    right: -13px;
+    top: 20px;
+    width: 90px;
+    position: absolute;
+}
+
+.woman2{
+    left: -10px;
+    top: 140px;
+    width: 90px;
+    position: absolute;
+}
+
+.man2{
+    right: -5px;
+    bottom: -25px;
+    width: 119px;
+    position: absolute;
+}
+
+
+
+
+
+/* container holding all the circles */
+.innerwaves{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle1{
+    width: 240px;
+    border-radius: 50%;
+    height: 240px;
+    position: absolute;
+    background: var(--clr-slate-300);
+    opacity: 3%;
+    align-items: center;
+}
+
+.circle2{
+    width: 190px;
+    border-radius: 50%;
+    height: 190px;
+    display: flex;
+    left: 45px;
+    top: 45px;
+    background: var(--clr-slate-300);
+    opacity: 7%;
+    position: absolute;
+    justify-content: center;
+}
+
+.circle3{
+    width: 120px;
+    border-radius: 50%;
+    height: 120px;
+    left: 80px;
+    top: 80px;
+    background: var(--clr-slate-300);
+    opacity: 14%;
+    position: absolute;
+    position: absolute;
+}
+
+
+.inner_circle_play{
+    z-index: 2;
+}
+
+.inner_circle_play div{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 19px 2.58px #6366F1;
+    border-radius: 50%;
+    background: var(--clr-slate-300);
+}
+
+.inner_circle_play div img{
+    width: 20px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+/* verify form  */
+.verify_accesibility{
+    display: none;
+}
+
+
+
+/* media queries */
+@media (min-width:480px) {
+    .hero-lft-txt h1{
+        font-size: 32px;
+        width: 300px;
+    }
+}
+
+
+@media (min-width:640px) {
+    .hero-lft-txt h1{
+        width: 400px;
+    }
+}
+
+@media (min-width:768px) {
+    .hero-lft-txt h1{
+        width: 500px;
+        font-size: 40px;
+    }
+
+    .hero_innercontent p{
+        font-size: 15px;
+    }
+
+    .hero_innercontent a{
+    font-size: 15px;
+    }
+    /* container holding all the circles */
+    .innerwaves{
+    width: 350px;
+    height: 350px;
+    }
+    
+    .circle1{
+    width: 290px;
+    height: 290px;
+    }
+    
+    .circle2{
+    width: 230px;
+    height: 230px;
+    left: 60px;
+    top: 60px;
+    opacity: 7%;
+    }
+    
+    .circle3{
+    width: 170px;
+    height: 170px;
+    left: 90px;
+    top: 90px;
+    opacity: 14%;
+    }
+    
+    
+    .inner_circle_play div{
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+    }
+    
+    .innerwaves{
+        left: 30px;
+        top: 15px;
+    }
+    
+    .verify_accesibility{
+        display: block;
+    }
+
+    .hero_innercontent a{
+        display: none;
+    }
+    
+    /* images of the people in the right section */
+    .man1{
+    width: 180px;
+    top: -79px;
+    left: -20px;
+    position: absolute;
+    }
+    
+    .woman1{
+    right: -13px;
+    top: -13px;
+    width: 140px;
+    position: absolute;
+    }
+    
+    .woman2{
+    left: -35px;
+    top: 180px;
+    width: 120px;
+    position: absolute;
+    }
+    
+    .man2{
+    right: -5px;
+    bottom: -35px;
+    width: 149px;
+    position: absolute;
+    }
+}
+
+@media (min-width:890px) {
+    .hero_innercontent a{
+        display: none;
+    }
+    
+    .verify_accesibility{
+        display: block;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .hero_content{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .hero{
+        padding-inline: 10px;
+    }
+
+    .hero-lft-txt h1{
+        width: 700px;
+        font-size: 54.54px;
+    }
+
+    .hero-lft-txt p{
+        font-size: 19.48;
+        font-weight: 800;
+    }
+
+    .hero_innercontent p{
+        font-weight: 300;
+    }
+
+    
+
+
+    .hero-right-txt{
+        margin-top: 60px;
+        width: 80%;
+    }
+
+}
+
