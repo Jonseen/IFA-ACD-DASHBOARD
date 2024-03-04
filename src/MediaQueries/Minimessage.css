@@ -1,6 +1,6 @@
 .mini_message{
     padding-block: 0.2rem;
-    font-size: 8.5px;
+    font-size: 12.5px;
     /* display: none; */
     background: var(--mini-msg-bg);
 }
