@@ -1,3 +1,4 @@
+// code for the image slider
 const scroller = document.querySelectorAll(".sponsor_scroller");
 
 
@@ -22,3 +23,9 @@ function addAnimation(){
     })
    });
 }
+
+window.addEventListener('scroll', ()=>{
+    let headerloop = document.querySelector("#head");
+    headerloop.classList.toggle("stick", scrollY > 40)
+})
+

@@ -1,17 +1,29 @@
+/* container holding everything */
 .accesibility{
     padding-top: 60px;
 }
 
+/* container holding the layout for the expert talks */
+.accesibility_experts{
+    display: grid;
+    gap: 20px;
+
+
+}
+
+/* intro text at the section */
 .accesibility_intro{
     text-align: center;
 }
 
+/* intro header */
 .accesibility_intro h4{
     font-size: 12px;
 }
 
 .accesibility_intro h1{
     font-size: 22px;
+    padding-bottom: 10px;
 }
 
 .accesibility_intro p{
@@ -33,11 +45,51 @@
 
 .experts_reviews{
     display: flex;
+    margin-top: 30px;
     flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
+    border: 1px solid #EAECF0;
 }
 
 .expert-review_images img{
     width: 100%;
+}
+
+.experts_reviews h4,
+.experts_reviews p{
+    padding-left: 10px;
+}
+
+/* Media Queries */
+@media (min-width:640px) {
+    .accesibility_intro h4{
+        font-size: 14px;
+    }
+
+    .accesibility_intro h1{
+        font-size: 27px;
+        padding-bottom: 20px;
+    }
+    .accesibility_experts{
+        grid-template-columns: minmax(auto, auto) repeat(1, auto);
+    }
+}
+
+
+@media (min-width:768px) {
+    .accesibility_experts{
+        grid-template-columns: minmax(auto, auto) repeat(2, auto);
+    }
+}
+
+@media (min-width:1200px) {
+    .accesibility_intro h1{
+        font-size: 50px;
+    }
+
+    .accesibility_intro p{
+        font-size: 15px;
+    }
+    .accesibility_experts{
+        grid-template-columns: minmax(auto, auto) repeat(3, auto);
+    }
 }

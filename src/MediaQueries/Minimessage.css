@@ -1,7 +1,6 @@
 .mini_message{
     padding-block: 0.2rem;
     font-size: 8.5px;
-    /* display: none; */
     background: var(--mini-msg-bg);
 }
 
@@ -47,6 +46,7 @@
 
 @media (min-width:768px) {
     .mini_message{
-        display: block;
+    padding-block: 5px;
+        font-size: 10px;
     }
 }
