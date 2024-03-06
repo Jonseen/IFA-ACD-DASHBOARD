@@ -1,0 +1,56 @@
+.verify_mobile{
+    display: none;
+}
+.mobile_verifybg h4{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.mobile_verifybg{
+    padding: 30px;
+    border-radius: 5px;
+    background: rgba(225, 225, 225, 70%);
+}
+
+.verify_mobile form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.verify_mobile #organization_type,
+.verify_mobile #organization_location,
+.verify_mobile #organization_name
+    {
+    border-right: 1px solid inherit;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.verify_mobile #submit_btn{
+    width: 100%;
+    padding: 5px 10px;
+    margin-left: 0;
+}
+
+.verify_mobile.mobileactivate{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    top: 0;
+    width: 100%;
+    margin-block: auto;
+    z-index: 100;
+}
+
+@media (min-width:768px) {
+    .verify_mobile.mobileactivate{
+        display: none;
+    }
+}

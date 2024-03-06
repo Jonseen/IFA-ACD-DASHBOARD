@@ -24,8 +24,42 @@ function addAnimation(){
    });
 }
 
+
 window.addEventListener('scroll', ()=>{
     let headerloop = document.querySelector("#head");
     headerloop.classList.toggle("stick", scrollY > 40)
+});
+
+
+
+// accordion
+let menu = document.getElementById("mnu-btn");
+let act = menu.addEventListener("click", ()=>{
+    let result = document.querySelector(".accordion_menu");
+
+    
+    result.classList.toggle("active");
+
+    // menuBtn.classList.remove("active")
 })
 
+
+
+const cross = document.querySelectorAll(".questions");
+cross.forEach(press=>{
+    press.addEventListener("click", ()=>{
+        press.classList.toggle("activated");
+    })
+})
+
+const verify = document.querySelector("#mobileaccess");
+const mobileshow = verify.addEventListener("click", ()=>{
+    let mobileresult = document.querySelector(".verify_mobile");
+    mobileresult.classList.add("mobileactivate");
+
+
+    const remover = document.querySelector("#mobilecloser")
+    remover.addEventListener("click", ()=>{
+        mobileresult.classList.remove("mobileactivate")
+    })
+});

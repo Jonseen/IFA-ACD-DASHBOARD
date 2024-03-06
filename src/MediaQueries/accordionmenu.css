@@ -1,0 +1,38 @@
+.accordion_menu{
+    position: fixed;
+    display: none;
+}
+
+.accordion_menu.active{
+    background: var(--clr-slate-dflt);
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.accordion_menu ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.accordion_menu ul li a{
+    color: var(--clr-slate-600);
+}
+
+
+@media (min-width:1200px) {
+    .accordion_menu.active{
+        display: none;
+    }
+}

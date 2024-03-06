@@ -114,7 +114,6 @@
     position: absolute;
     background: var(--clr-slate-300);
     opacity: 3%;
-    transition: .3s ease-in-out;
     align-items: center;
     animation: bouncer 6s linear infinite;
 }
@@ -144,7 +143,6 @@
     background: var(--clr-slate-300);
     opacity: 7%;
     position: absolute;
-    transition: .3s ease-in-out;
     justify-content: center;
     animation: bouncer2 6s 3s linear infinite;
 }
@@ -174,7 +172,6 @@
     background: var(--clr-slate-300);
     opacity: 14%;
     position: absolute;
-    transition: .3s ease-in-out;
     position: absolute;
 }
 
@@ -251,6 +248,7 @@
 #submit_btn{
     margin-left: 10px;
     border-radius: 3px;
+    padding: 10px 20px;
     color: var(--clr-slate-500);
     border: 1px solid var(--clr-slate-300);
     background: var(--clr-slate-300);
@@ -272,9 +270,17 @@
 }
 
 @media (min-width:768px) {
-    .hero-lft-txt h1{
-        width: 500px;
-        font-size: 40px;
+
+    .hero_content{
+        flex-direction: row;
+    }
+
+    .hero-lft-txt{
+        width: 50%;
+    }
+
+    .hero-right-txt{
+        margin-top: 3rem;
     }
 
     .hero_innercontent p{
@@ -286,9 +292,17 @@
     }
     /* container holding all the circles */
     .innerwaves{
+    scale: 0.7;
     width: 350px;
     height: 350px;
     }
+
+    #verification_process{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
     
     .circle1{
     width: 290px;
@@ -394,12 +408,16 @@
         flex-direction: row;
     }
 
-    #verification_process{
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 60%;
-        gap: 5px;
+    .hero-lft-txt h1{
+        width: 400px;
+        font-size: 34.54px;
     }
+
+    .innerwaves{
+        margin-top: 6rem;
+        scale: initial;
+    }
+
 
     #submit_btn{
         padding: 5px 40px;
@@ -449,7 +467,6 @@
 
     .hero-right-txt{
         margin-top: 60px;
-        width: 80%;
     }
 
     .verify_accesibility p{
