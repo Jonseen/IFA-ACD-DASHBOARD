@@ -6,6 +6,8 @@
 @import url(../src/MediaQueries/expert-reviews.css);/*styles for expert reviews 2019 Arc*/
 @import url(../src/MediaQueries/Evaluations.css);/*evaluation styling*/
 @import url(../src/MediaQueries/acessibility.css);/*accesibility styling*/
+@import url(../src/MediaQueries/faq.css);/*facts and questions styling*/
+@import url(../src/MediaQueries/footer.css);/*facts and questions styling*/
 
 
 
@@ -35,6 +37,10 @@ body{
     --clr-slate-900: #6366F1;
     --clr-slate-1000: #003D80;
     --clr-slate-1100: #131022;
+    --clr-slate-1110: #F2F4F7;
+    --clr-slate-1120: #B4B7C9;
+    --clr-slate-1130: #4FB32B;
+    --clr-slate-1140: #E2E4E5;
     --clr-slate-dflt: #ffffff;
 }
 
@@ -46,26 +52,43 @@ body{
 
 /* helper classes */
 .container{
-    margin: 0 auto;
-    box-sizing: content-box;
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 100%;
     padding-inline: 20px;
 }
 
+.content_slider{
+    margin-left: auto;
+    margin-right: auto;
+}
 
+@media (min-width:270px) {
+    .container{
+        max-width: 270px;
+    }
+}
 
 
 @media (min-width:320px) {
     .container{
         max-width: 320px;
     }
-}
 
+    .content_slider{
+        max-width: 320px;
+    }
+}
 
 
 /* 400px */
 @media (min-width:400px) {
     .container{
+        max-width: 400px;
+    }
+
+    .content_slider{
         max-width: 400px;
     }
 }
@@ -76,6 +99,10 @@ body{
     .container{
         max-width: 480px;
     }
+
+    .content_slider{
+        max-width: 480px;
+    }
 }
 
 
@@ -84,11 +111,13 @@ body{
     .container{
         max-width: 640px;
     }
+    
 }
 
 /* 768px */
 @media (min-width:768px) {
     .container{
+        padding-inline: 50px;
         max-width: 768px;
     }
 }

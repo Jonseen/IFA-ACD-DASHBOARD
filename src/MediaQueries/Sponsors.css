@@ -11,15 +11,20 @@
 .federal_images div{
     width: 60px;
     height: 60px;
+    overflow: hidden;
     border-radius: 50%;
     border: 5px solid var(--clr-slate-500);
-    background: #d3d3d3;
+}
+
+.federal_images div img {
+    width: 100%;
 }
 
 
 /* the first container inside the federal_images */
 .federal_images div:first-child{
     position: relative;
+    border-color: var(--clr-slate-1130);
     left: 20px;
 }
 
@@ -32,6 +37,7 @@
 .federal_images div:last-child{
     position: relative;
     z-index: 4;
+    border-color: var(--clr-slate-1130);
     right: 17px;
 }
 
@@ -102,7 +108,7 @@
 
 
 
-
+/* Media Queries */
 @media (min-width:640px) {
     .sponsor_scroller{
         max-width: 530px;
@@ -143,12 +149,13 @@
 }
 
 .sponsor_scroller{
-    max-width: 650px;
+    max-width: 600px;
 }
 
 .verified_users p{
     flex-direction: row;
     gap: 0.5rem;
+    background: white;
     align-items: center;
 }
 

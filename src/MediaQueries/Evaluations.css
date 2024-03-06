@@ -21,13 +21,20 @@
 .evaluation_form{
     margin-inline: 10px;
     padding: 10px;
-    border-radius: 5px;
     background: var(--clr-slate-dflt);
+    border: var(--clr-slate-1140);
+    border-radius: 5px;
+}
+
+.evaluation_form form{
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--clr-slate-1140);
 }
 
 .evaluation_form h3{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .evaluation_form p{
@@ -73,16 +80,17 @@
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: 1px solid var(--clr-slate-1140);
     outline: var(--mini-ms-bg);
 }
 
 #submit_form{
-    margin-top: 10px;
-    border: none;
-    background-color: var(--clr-slate-300);
-    color: var(--clr-slate-dflt);
+    margin-top: 20px;
+    border: 1px solid var(--clr-slate-1140);
+    background-color: var(--clr-slate-dflt);
+    color: black;
     border-radius: 3px;
-    padding: 5px 10px;
+    padding: 10px 20px;
 }
 
 
@@ -93,4 +101,43 @@
 
 .evaluation_form form h4{
     font-size: 16px;
+}
+
+@media (min-width:768px) {
+    .evaluations{
+        padding-bottom: 60px;
+        padding-inline: 30px;
+    }
+
+    .evaluations h2{
+        padding-block: 60px;
+    }
+
+    .evaluation_form{
+        padding: 40px;
+    }
+}
+@media (min-width:1000px) {
+    .form_input input{
+        width: 80%;
+    }
+
+    .evaluation_form p{
+        width: 400px;
+    }
+
+    .evaluation_form form{
+        width: 60%;
+    }
+}
+
+@media (min-width:1200px) {
+    .evaluations h2{
+        font-size: 40px;
+    }
+
+    .evaluations h3{
+        font-size: 30px;
+    }
+
 }

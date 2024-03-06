@@ -7,6 +7,7 @@
 .reviews{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 
 .expert_reviews::before{
@@ -32,14 +33,13 @@
 .expert_comments p{
     font-size: 17px;
     font-weight: 700;
-    top: 20px;
+    align-items: center;
+    width: 200px;
     position: relative;
 }
 
 .expert_comments p{
     display: flex;
-    justify-content:center;
-    align-items:flex-start;
     width: 200px;
     z-index: 2;
     vertical-align: top;
@@ -54,8 +54,10 @@
     width: 100%;
 }
 
-.reviews .professional_reviews{
-    box-shadow: 0 2.14px 5.83px 1px #131022;
+/* container holding the right content  */
+.pro_reviewers{
+    box-shadow: 0 4.4px 12px rgba(19%, 16%, 34%, 6%);
+    border-radius: 5px;
 }
 
 
@@ -98,6 +100,7 @@
     margin-top: 20px;
     display: flex;
     align-items: center;
+    padding-left: 10px;
     flex-direction: row;
     gap: 10px;
 }
@@ -112,8 +115,28 @@
 }
 
 
+/* social section of professional reviews */
+.expert_socials{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.expert_socials div{
+    background-color: var(--clr-slate-1110);
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    align-items: center;
+    border-radius: 50%;
+}
 
 
+
+
+/* Media Queries */
 @media (min-width:400px) {
     .expert_cmmnts_image img{
         padding-top: 10px;
@@ -125,10 +148,8 @@
         justify-content: space-evenly;
     }
 
-
-
     .expert_comments p{
-        width: 70%;
+        width: 210px;
         font-size: 20px;
     }
 }
@@ -136,16 +157,14 @@
 @media (min-width:768px) {
     .expert_comments p{
         font-size:25px;
+        align-items: center;
     }
 
-    
+    .expert_comments{
+        height: inherit;
+    }
+
 }
-
-
-
-
-
-
 
 @media (min-width:1200px) {
     .reviews{
@@ -154,20 +173,19 @@
         gap: 20px;
     }
 
-    .expert_comments p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .expert_reviews{
         width: 100%;
+        padding-block: 40px;
         overflow: initial;
     }
+
+
+
+
     
     .uppercard_text p,
     .name_info h3{
-        font-size: 18px;
+        font-size: 15px;
     }
     
 }
