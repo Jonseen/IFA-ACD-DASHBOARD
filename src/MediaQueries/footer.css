@@ -9,11 +9,18 @@
 
 
 
-.footer_waves img{
+.footer_waves img:first-child{
     top: -40px;
     position: absolute;
     width: 100%;
 }
+
+.footer_waves img:last-child{
+    position: absolute;
+    width: 100%;
+    top: -30px;
+}
+
 
 .footer_logo a img:first-child{
     display: none;
@@ -140,7 +147,7 @@
 }
 
 @media (min-width:768px) {
-    .footer_waves img{
+    .footer_waves img:first-child{
     top: -70px;
     }
 

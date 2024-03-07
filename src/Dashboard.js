@@ -38,7 +38,14 @@ let act = menu.addEventListener("click", ()=>{
     let result = document.querySelector(".accordion_menu");
 
     
-    result.classList.toggle("active");
+    result.classList.add("active");
+
+
+    let accordioncloser = document.querySelector("#accordionclose");
+
+    let closeaccordion = accordioncloser.addEventListener("click", ()=>{
+        result.classList.remove("active");
+    })
 
     // menuBtn.classList.remove("active")
 })
@@ -51,6 +58,8 @@ cross.forEach(press=>{
         press.classList.toggle("activated");
     })
 })
+
+
 
 const verify = document.querySelector("#mobileaccess");
 const mobileshow = verify.addEventListener("click", ()=>{

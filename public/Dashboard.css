@@ -26,6 +26,11 @@ body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    width: 8px;
+    height: 0px;
+}
+
 
 :root{
     --mini-msg-bg: #FA17D6;
