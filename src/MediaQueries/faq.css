@@ -68,6 +68,9 @@
 }
 
 @media (min-width:1200px) {
+    .facts{
+        padding-bottom: 80px;
+    }
     .facts h1{
         font-size: 30px;
     }

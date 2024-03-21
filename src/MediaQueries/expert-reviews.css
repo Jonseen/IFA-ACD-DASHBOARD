@@ -2,12 +2,13 @@
 .expert_reviews{
     overflow: hidden;
     position: relative;
+    flex: 1;
 }
 
 .reviews{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
 .expert_reviews::before{
@@ -38,6 +39,7 @@
     position: relative;
 }
 
+
 .expert_comments p{
     display: flex;
     width: 200px;
@@ -50,7 +52,7 @@
 }
 
 .expert_cmmnts_image img{
-    padding-top: 40px;
+    padding-top: 40px;  
     width: 100%;
 }
 
@@ -58,6 +60,8 @@
 .pro_reviewers{
     box-shadow: 0 4.4px 12px rgba(19%, 16%, 34%, 6%);
     border-radius: 5px;
+    flex: 1;
+    width: 100%;
 }
 
 
@@ -82,12 +86,37 @@
 }
 
 .uppercard{
-    display: flex;
-    flex-direction: row;
     margin-block: 20px;
     padding-inline: 10px;
     justify-content: space-between;
 }
+
+.swiping{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+.swiper-home {
+    width: 100%;
+}
+
+.card-holder {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.navigation-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10px;
+    padding-block: 10px;
+}
+
 
 .uppercard_text p{
     padding-inline: 10px;

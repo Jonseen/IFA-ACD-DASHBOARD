@@ -1,0 +1,166 @@
+.compliance-summary{
+    display: none;
+}
+
+
+@media(min-width:768px){
+    .compliance-summary.compliance-summary.dashboard-released{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 100vh;
+    
+    }
+}
+
+.compliance-summary.dashboard-released{
+    display: none;
+ 
+}
+
+.uppersummary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-direction: row;
+}
+
+#dashboardclosebtn{
+    cursor: pointer;
+}
+
+.summary-board{
+    padding: 50px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(239, 242, 248, 80%);
+}
+
+.uppersummary h3{
+    font-size: 14px;
+}
+
+.summaryorg{
+    color: var(--clr-slate-300);
+}
+
+.compliance-close h3{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.compliance-close{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.compliance-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.compliance-details div p{
+    font-size: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.detailcircles{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background:rgba(242, 245, 250, 100%);
+}
+
+
+
+.compliance_score,
+.emploment_quota,
+.accesibilitybar,
+.security{
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: conic-gradient(var(--clr-slate-1150) 90deg, #ededed 0deg );
+}
+
+.emploment_quota{
+    background: conic-gradient(var(--clr-slate-1160) 70deg, #ededed 0deg );
+}
+
+.accesibilitybar{
+    background: conic-gradient(var(--clr-slate-1170) 250deg, #ededed 0deg );
+}
+
+.security{
+    background: conic-gradient(var(--clr-slate-300) 300deg, #ededed 0deg );
+}
+
+.compliance_score::before,
+.emploment_quota::before,
+.accesibilitybar::before,
+.security::before{
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+
+.compliance-details{
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.detailcircles h3{
+    font-size: 25px;
+    z-index: 10;
+}
+
+.raduisinfo{
+    display: flex;
+    align-content: center;
+    padding-top: 30px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.compliance-details .detailinfo{
+    border-radius: 5px;
+    background: white;
+    height: 190px;
+    width: 160px;
+}
+
+.dashboardaccessbtn{
+    padding: 10px;
+    text-align: center;
+    border-radius: 9px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    background: var(--clr-slate-300);
+}
+
+.dashboardaccessbtn a{
+    color: white;
+    width: 100%;
+}

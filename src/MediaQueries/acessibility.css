@@ -79,6 +79,25 @@
     .accesibility_experts{
         grid-template-columns: minmax(auto, auto) repeat(2, auto);
     }
+
+    .accesibility_intro p{
+        padding-inline: 85px;
+    }
+}
+
+
+@media (min-width:890px) {
+    .accesibility_intro p{
+        padding-inline: 90px;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width:1000px) {
+    .accesibility_intro p{
+        padding-inline: 15px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -88,6 +107,7 @@
 
     .accesibility_intro p{
         font-size: 15px;
+        padding-inline: 270px;
     }
     .accesibility_experts{
         grid-template-columns: minmax(auto, auto) repeat(3, auto);

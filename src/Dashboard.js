@@ -72,3 +72,18 @@ const mobileshow = verify.addEventListener("click", ()=>{
         mobileresult.classList.remove("mobileactivate")
     })
 });
+
+
+
+const dashboard = document.getElementById("submit_btn");
+const dashshow = dashboard.addEventListener("click", ()=>{
+    let dashboardinfo = document.querySelector(".compliance-summary");
+    dashboardinfo.classList.add("dashboard-released")
+
+
+
+const dashclose = document.getElementById("dashboardclosebtn");
+dashclose.addEventListener("click", ()=>{
+    dashboardinfo.classList.remove("dashboard-released")
+})
+});

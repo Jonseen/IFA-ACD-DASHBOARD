@@ -10,6 +10,7 @@
 @import url(../src/MediaQueries/footer.css);/*facts and questions styling*/
 @import url(../src/MediaQueries/accordionmenu.css);/*facts and questions styling*/
 @import url(../src/MediaQueries/verifymobile.css);/*verift accesibility for mobile*/
+@import url(../src/MediaQueries/compliancesummary.css);/*verift accesibility for mobile*/
 
 
 
@@ -48,6 +49,9 @@ body{
     --clr-slate-1120: #B4B7C9;
     --clr-slate-1130: #4FB32B;
     --clr-slate-1140: #E2E4E5;
+    --clr-slate-1150: #E53761;
+    --clr-slate-1160: #27A468;
+    --clr-slate-1170: #F2A735;
     --clr-slate-dflt: #ffffff;
 }
 
